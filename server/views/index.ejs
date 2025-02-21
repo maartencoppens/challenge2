@@ -1,0 +1,20 @@
+<!-- <h2>Wat is de hoofdstad van Frankrijk?</h2>
+<form action="/quiz" method="POST">
+    <input type="text" name="antwoord" required>
+    <button type="submit">Versturen</button>
+</form> -->
+
+<h1>Kan jij de verborgen boodschap vinden?</h1>
+<p>De sleutel zit verstopt... Maar waar?</p>
+<p id="hint">Zoek in de console (F12)...</p>
+
+<p class="invisible-text">Misschien is er een geheime code: 42</p>
+
+<p>Als je de sleutel gevonden hebt, is het tijd om de submit button te zoeken!</p>
+
+<form action="/quiz" method="POST">
+    <input type="text" id="username" name="username" placeholder="Username">
+    <input type="text" id="secretCode" name="antwoord" placeholder="Voer de geheime code in">
+    <button id="submit" class="hidden-button" type="submit">Verifieer code</button>
+</form>
+<p id="codeResult" class="hidden-message"></p>

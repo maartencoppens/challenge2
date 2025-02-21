@@ -1,0 +1,30 @@
+/* body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+}
+#hint {
+    color: transparent;
+    font-size: 0.1px;
+}
+.hidden-message {
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #00ff00;
+}
+.hidden-button {
+    position: absolute;
+    top: -20px;
+    left: -15px;
+}
+.invisible-text {
+    color: #111;
+}
