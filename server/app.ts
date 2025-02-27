@@ -4,11 +4,11 @@ import expressLayouts from "express-ejs-layouts";
 import routes from "./routes";
 
 const app: Application = express();
-const PORT: number = 3000;
+const PORT: number = parseInt(<string>process.env.PORT, 10) || 3000;
 
 // EJS als template-engine instellen
 app.set("view engine", "ejs");
-app.set("views", "./server/views");
+app.set("views", path.join(__dirname, "views"));
 
 // Middleware voor layouts
 app.use(expressLayouts);
