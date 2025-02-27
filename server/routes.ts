@@ -1,7 +1,6 @@
 import express, { Request, Response, Router } from "express";
 
 const router: Router = express.Router();
-const newsArticles = [{title: "Donald Trump is gay", description: "Vandaag is donald trump uit de kast gekomen."}, {title: "Barack Obama did a dap", description: "Hij leeft nog zoals hij 16 was."}, {title: "Bavo De Bondt heeft een lange pink", description: "Danne lange hand"}];
 
 
 // Homepagina
@@ -30,10 +29,6 @@ router.post("/quiz", (req: Request, res: Response): void => {
             .then(error => console.error(error));
     }
     res.render("result", { title: "Challenge resultaat", boodschap: message });
-});
-
-router.get("/news", (req: Request, res: Response): void => {
-    res.render("news", { title: "Article", kanker: newsArticles })
 });
 
 //redirect get request op /quiz naar /
